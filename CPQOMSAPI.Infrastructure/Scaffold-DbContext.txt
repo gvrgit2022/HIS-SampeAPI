@@ -1,0 +1,1 @@
+﻿scaffold-DBcontext 'server=localhost;database=test;uid=root;pwd=Sql@2021' MySQL.EntityFrameworkCore -OutputDir Model\Test -Context 'TestContext' -Force
