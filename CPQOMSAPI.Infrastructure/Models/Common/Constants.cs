@@ -13,7 +13,8 @@ namespace SampleAPI.Infrastructure.Models.Common
             public const string ProductsDBConnectionString = "ProductsContext";
             public const string OrdersDBConnectionString = "OrdersContext";
            public const string DocsDBConnectionString = "DocsContext";
-            public const string TestDBConnectionString = "TestContext";
+            public const string TestDBConnectionString = "HMSContext";
+            public const string HMSDBConnectionString = "HMSContext";
         }
 
     }

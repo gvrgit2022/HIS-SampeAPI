@@ -19,7 +19,7 @@ namespace SampleAPI.Infrastructure.Models
            
             services.AddDbContext<testContext>(options =>
             {
-                options.UseMySQL(configuration.GetConnectionString(Constants.Configuration.TestDBConnectionString));
+                options.UseMySQL(configuration.GetConnectionString(Constants.Configuration.HMSDBConnectionString));
                 options.EnableSensitiveDataLogging();
             });
 

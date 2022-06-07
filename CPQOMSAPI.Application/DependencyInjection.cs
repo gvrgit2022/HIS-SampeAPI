@@ -16,7 +16,6 @@ namespace SampleAPI.Application
             services.AddAutoMapper(typeof(DependencyInjection));
             services.AddValidatorsFromAssemblyContaining(typeof(DependencyInjection));
             services.AddScoped(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-            //services.AddLegacy(configuration);
             return services;
         }
     }

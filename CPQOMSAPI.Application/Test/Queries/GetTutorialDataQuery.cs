@@ -27,13 +27,15 @@ public class GetTutorialDataQuery : IRequest<TutorialsTblModelcs>
 		public GetTutorialDataQueryHandler(testContext tcontext, IMapper mapper) : base(tcontext, mapper) { }
 
 		public async Task<TutorialsTblModelcs> Handle(GetTutorialDataQuery request, CancellationToken cancellationToken)
-		{
-			
-			var samples = await testContext.TutorialsTbls.AsNoTracking()
-				 .Where(c => c.TutorialId == request.TutorialId)
-			   .ProjectTo<TutorialsTblModelcs>(ConfigurationProvider)
-			   .FirstOrDefaultAsync(cancellationToken);
-			return samples;
+        {
+			//var samples = await testContext.TutorialsTbls.Select
+             //  .FirstOrDefaultAsync(cancellationToken);
+
+            var samples = await testContext.TutorialsTbls.AsNoTracking()
+                 .Where(c => c.TutorialId == request.TutorialId)
+               .ProjectTo<TutorialsTblModelcs>(ConfigurationProvider)
+               .FirstOrDefaultAsync(cancellationToken);
+            return samples;
 		}
 	}
 }

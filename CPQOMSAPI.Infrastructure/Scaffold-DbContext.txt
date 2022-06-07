@@ -1,1 +1,1 @@
-﻿scaffold-DBcontext 'server=localhost;database=test;uid=root;pwd=Sql@2021' MySQL.EntityFrameworkCore -OutputDir Model\Test -Context 'TestContext' -Force
+﻿scaffold-DBcontext 'server=103.168.19.36 3306;database=HMS_Dev;uid=gvrhms;pwd=ByCYRq3aSPZGGHW6' MySQL.EntityFrameworkCore -OutputDir Models\HMS -Context 'HMSContext' -Force
